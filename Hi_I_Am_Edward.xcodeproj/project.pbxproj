@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2FFE90207576FC00BE0FF6 /* redGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FFE8F207576FC00BE0FF6 /* redGradient.swift */; };
+		2C2FFE92207578B000BE0FF6 /* blueGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FFE91207578B000BE0FF6 /* blueGradient.swift */; };
+		2C2FFE942075792200BE0FF6 /* yellowGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FFE932075792200BE0FF6 /* yellowGradient.swift */; };
+		2C2FFE9620758F0D00BE0FF6 /* purpleGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FFE9520758F0D00BE0FF6 /* purpleGradient.swift */; };
+		2C2FFE982075924B00BE0FF6 /* spotGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2FFE972075924B00BE0FF6 /* spotGradient.swift */; };
 		2C464C4B2074213700A23245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C464C4A2074213700A23245 /* AppDelegate.swift */; };
-		2C464C4D2074213700A23245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C464C4C2074213700A23245 /* ViewController.swift */; };
 		2C464C502074213700A23245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C464C4E2074213700A23245 /* Main.storyboard */; };
 		2C464C522074213700A23245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C464C512074213700A23245 /* Assets.xcassets */; };
 		2C464C552074213700A23245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C464C532074213700A23245 /* LaunchScreen.storyboard */; };
+		2C464C60207421A500A23245 /* favoriteMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C464C5F207421A500A23245 /* favoriteMovie.swift */; };
+		2C464C62207422B500A23245 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C464C61207422B500A23245 /* HomeScreen.swift */; };
+		2C464C65207422F100A23245 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C464C64207422F100A23245 /* File.swift */; };
+		2C464C682074243F00A23245 /* favoriteMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C464C672074243F00A23245 /* favoriteMusic.swift */; };
+		2C60BBF1207815B7002527DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C60BBF0207815B7002527DE /* GoogleService-Info.plist */; };
+		2C62445E2076C52F00CF8808 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62445C2076C52F00CF8808 /* SWRevealViewController.m */; };
+		2C6244602076C61E00CF8808 /* grayGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C62445F2076C61E00CF8808 /* grayGradient.swift */; };
+		2C6244622076C62900CF8808 /* lightGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6244612076C62900CF8808 /* lightGradient.swift */; };
+		2C6244642076C68500CF8808 /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6244632076C68500CF8808 /* MenuScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2FFE8F207576FC00BE0FF6 /* redGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redGradient.swift; sourceTree = "<group>"; };
+		2C2FFE91207578B000BE0FF6 /* blueGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueGradient.swift; sourceTree = "<group>"; };
+		2C2FFE932075792200BE0FF6 /* yellowGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellowGradient.swift; sourceTree = "<group>"; };
+		2C2FFE9520758F0D00BE0FF6 /* purpleGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purpleGradient.swift; sourceTree = "<group>"; };
+		2C2FFE972075924B00BE0FF6 /* spotGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotGradient.swift; sourceTree = "<group>"; };
 		2C464C472074213700A23245 /* Hi_I_Am_Edward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hi_I_Am_Edward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C464C4A2074213700A23245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C464C4C2074213700A23245 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C464C4F2074213700A23245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C464C512074213700A23245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C464C542074213700A23245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C464C562074213700A23245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C464C5F207421A500A23245 /* favoriteMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteMovie.swift; sourceTree = "<group>"; };
+		2C464C61207422B500A23245 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		2C464C64207422F100A23245 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2C464C672074243F00A23245 /* favoriteMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteMusic.swift; sourceTree = "<group>"; };
+		2C60BBF0207815B7002527DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C62445B2076C52E00CF8808 /* Hi_I_Am_Edward-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hi_I_Am_Edward-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C62445C2076C52F00CF8808 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../../Desktop/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		2C62445D2076C52F00CF8808 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../../Desktop/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		2C62445F2076C61E00CF8808 /* grayGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = grayGradient.swift; path = ../../../GradientPractice/GradientPractice/View/grayGradient.swift; sourceTree = "<group>"; };
+		2C6244612076C62900CF8808 /* lightGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lightGradient.swift; path = ../../../GradientPractice/GradientPractice/View/lightGradient.swift; sourceTree = "<group>"; };
+		2C6244632076C68500CF8808 /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +82,69 @@
 		2C464C492074213700A23245 /* Hi_I_Am_Edward */ = {
 			isa = PBXGroup;
 			children = (
+				2C62445A2076C50E00CF8808 /* SupportingFiles */,
+				2C464C63207422D300A23245 /* Utilities */,
+				2C464C5E2074218000A23245 /* View */,
+				2C464C5D2074217500A23245 /* Controller */,
+				2C464C5C2074215F00A23245 /* Model */,
 				2C464C4A2074213700A23245 /* AppDelegate.swift */,
-				2C464C4C2074213700A23245 /* ViewController.swift */,
 				2C464C4E2074213700A23245 /* Main.storyboard */,
 				2C464C512074213700A23245 /* Assets.xcassets */,
 				2C464C532074213700A23245 /* LaunchScreen.storyboard */,
 				2C464C562074213700A23245 /* Info.plist */,
 			);
 			path = Hi_I_Am_Edward;
+			sourceTree = "<group>";
+		};
+		2C464C5C2074215F00A23245 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C464C5D2074217500A23245 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C464C5F207421A500A23245 /* favoriteMovie.swift */,
+				2C464C61207422B500A23245 /* HomeScreen.swift */,
+				2C464C672074243F00A23245 /* favoriteMusic.swift */,
+				2C6244632076C68500CF8808 /* MenuScreen.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C464C5E2074218000A23245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C2FFE8F207576FC00BE0FF6 /* redGradient.swift */,
+				2C2FFE91207578B000BE0FF6 /* blueGradient.swift */,
+				2C2FFE932075792200BE0FF6 /* yellowGradient.swift */,
+				2C2FFE9520758F0D00BE0FF6 /* purpleGradient.swift */,
+				2C2FFE972075924B00BE0FF6 /* spotGradient.swift */,
+				2C62445F2076C61E00CF8808 /* grayGradient.swift */,
+				2C6244612076C62900CF8808 /* lightGradient.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C464C63207422D300A23245 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2C464C64207422F100A23245 /* File.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C62445A2076C50E00CF8808 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C62445D2076C52F00CF8808 /* SWRevealViewController.h */,
+				2C62445C2076C52F00CF8808 /* SWRevealViewController.m */,
+				2C62445B2076C52E00CF8808 /* Hi_I_Am_Edward-Bridging-Header.h */,
+				2C60BBF0207815B7002527DE /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +179,7 @@
 				TargetAttributes = {
 					2C464C462074213700A23245 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C464C552074213700A23245 /* LaunchScreen.storyboard in Resources */,
+				2C60BBF1207815B7002527DE /* GoogleService-Info.plist in Resources */,
 				2C464C522074213700A23245 /* Assets.xcassets in Resources */,
 				2C464C502074213700A23245 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +221,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C464C4D2074213700A23245 /* ViewController.swift in Sources */,
+				2C464C60207421A500A23245 /* favoriteMovie.swift in Sources */,
+				2C2FFE942075792200BE0FF6 /* yellowGradient.swift in Sources */,
+				2C6244602076C61E00CF8808 /* grayGradient.swift in Sources */,
+				2C464C65207422F100A23245 /* File.swift in Sources */,
+				2C2FFE9620758F0D00BE0FF6 /* purpleGradient.swift in Sources */,
+				2C464C682074243F00A23245 /* favoriteMusic.swift in Sources */,
+				2C2FFE982075924B00BE0FF6 /* spotGradient.swift in Sources */,
 				2C464C4B2074213700A23245 /* AppDelegate.swift in Sources */,
+				2C6244642076C68500CF8808 /* MenuScreen.swift in Sources */,
+				2C2FFE92207578B000BE0FF6 /* blueGradient.swift in Sources */,
+				2C6244622076C62900CF8808 /* lightGradient.swift in Sources */,
+				2C62445E2076C52F00CF8808 /* SWRevealViewController.m in Sources */,
+				2C464C62207422B500A23245 /* HomeScreen.swift in Sources */,
+				2C2FFE90207576FC00BE0FF6 /* redGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,13 +371,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVT8CFTACP;
 				INFOPLIST_FILE = Hi_I_Am_Edward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ER.Hi-I-Am-Edward";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hi-I-Am-Edward";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hi_I_Am_Edward/SupportingFiles/Hi_I_Am_Edward-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,13 +392,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVT8CFTACP;
 				INFOPLIST_FILE = Hi_I_Am_Edward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ER.Hi-I-Am-Edward";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hi-I-Am-Edward";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hi_I_Am_Edward/SupportingFiles/Hi_I_Am_Edward-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

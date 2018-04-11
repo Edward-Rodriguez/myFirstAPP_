@@ -1,24 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K6i-sv-tlK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Reveal View Controller-->
+        <scene sceneID="TEs-IN-12J">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="K6i-sv-tlK" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qLI-3W-2nS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4tL-Y8-aHJ"/>
+                    </view>
+                    <connections>
+                        <segue destination="SyR-p0-mQY" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="DIr-lz-f1U"/>
+                        <segue destination="DYj-Br-YEk" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="rmw-H5-m5O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqj-wi-Q9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1491" y="-387"/>
+        </scene>
+        <!--Home Screen-->
+        <scene sceneID="seI-bM-GbT">
+            <objects>
+                <viewController id="SyR-p0-mQY" customClass="HomeScreen" customModule="Hi_I_Am_Edward" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qaq-oj-NgS" customClass="grayGradient" customModule="Hi_I_Am_Edward" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi I'm Edward" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYT-o3-ClU">
+                                <rect key="frame" x="126" y="285" width="162" height="84"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe right for Menu Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znV-HD-HMl">
+                                <rect key="frame" x="55.5" y="563.5" width="264" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="znV-HD-HMl" firstAttribute="centerX" secondItem="KzJ-PU-xiA" secondAttribute="centerX" id="IEM-Wz-U6Q"/>
+                            <constraint firstItem="rYT-o3-ClU" firstAttribute="centerX" secondItem="KzJ-PU-xiA" secondAttribute="centerX" id="czP-vM-wCA"/>
+                            <constraint firstItem="KzJ-PU-xiA" firstAttribute="bottom" secondItem="znV-HD-HMl" secondAttribute="bottom" constant="75" id="mUL-jp-8d5"/>
+                            <constraint firstItem="rYT-o3-ClU" firstAttribute="centerY" secondItem="KzJ-PU-xiA" secondAttribute="centerY" id="yg6-2v-z3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KzJ-PU-xiA"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMw-F1-cU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-378.26086956521743" y="-697.01086956521749"/>
+        </scene>
+        <!--Menu Screen-->
+        <scene sceneID="dm1-Ue-1Np">
+            <objects>
+                <viewController id="DYj-Br-YEk" customClass="MenuScreen" customModule="Hi_I_Am_Edward" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Vr-LS-4fg" customClass="spotGradient" customModule="Hi_I_Am_Edward" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8A-bh-PrT">
+                                <rect key="frame" x="81" y="333" width="205" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="pRg-30-rZl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <size key="titleShadowOffset" width="-2" height="2"/>
+                                <state key="normal" title="Favorite Movie">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoriteMovieButtonPressed:" destination="DYj-Br-YEk" eventType="touchUpInside" id="3Zo-4z-e67"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFy-Rt-gdL">
+                                <rect key="frame" x="65.5" y="493" width="236" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Fym-Lu-D9P"/>
+                                    <constraint firstAttribute="width" secondItem="KFy-Rt-gdL" secondAttribute="height" multiplier="236:73" id="b8k-Dx-CMa"/>
+                                    <constraint firstAttribute="width" constant="236" id="xqU-J6-rXK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <size key="titleShadowOffset" width="-2" height="2"/>
+                                <state key="normal" title="Favorite Music">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoriteMusicButtonPressed:" destination="DYj-Br-YEk" eventType="touchUpInside" id="AEP-Z3-U2o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43975790268894671" green="0.66074401741056177" blue="0.84390312433242798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h8A-bh-PrT" firstAttribute="top" secondItem="lyD-4o-vtK" secondAttribute="top" constant="313" id="I8u-Cn-fnI"/>
+                            <constraint firstItem="KFy-Rt-gdL" firstAttribute="top" secondItem="h8A-bh-PrT" secondAttribute="bottom" constant="53" id="NQQ-wI-BUb"/>
+                            <constraint firstItem="lyD-4o-vtK" firstAttribute="trailing" secondItem="h8A-bh-PrT" secondAttribute="trailing" constant="89" id="ZQ0-mh-xOX"/>
+                            <constraint firstItem="KFy-Rt-gdL" firstAttribute="centerX" secondItem="h8A-bh-PrT" secondAttribute="centerX" id="fMy-Vx-9yn"/>
+                            <constraint firstItem="KFy-Rt-gdL" firstAttribute="top" secondItem="h8A-bh-PrT" secondAttribute="bottom" constant="87" id="th3-zd-GE1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lyD-4o-vtK"/>
+                    </view>
+                    <connections>
+                        <segue destination="0kq-2p-5mc" kind="show" identifier="toMusicScreen" id="NRs-eV-9J7"/>
+                        <segue destination="ysX-XQ-STL" kind="show" identifier="toMovieScreen" id="BPX-rQ-3fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGZ-Ol-9eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-308.69565217391306" y="54.619565217391312"/>
+        </scene>
+        <!--Favorite Music-->
+        <scene sceneID="UHZ-ZN-uQC">
+            <objects>
+                <viewController id="0kq-2p-5mc" customClass="favoriteMusic" customModule="Hi_I_Am_Edward" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6S6-ac-17B" customClass="redGradient" customModule="Hi_I_Am_Edward" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tf-eT-Pv2">
+                                <rect key="frame" x="30" y="40" width="87" height="45"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
+                                <size key="titleShadowOffset" width="-2" height="2"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" red="0.92431861162185669" green="0.69410651922225952" blue="0.6507454514503479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButtonPressed:" destination="0kq-2p-5mc" eventType="touchUpInside" id="NM2-Kn-YLr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="El-Farsante-960x600" translatesAutoresizingMaskIntoConstraints="NO" id="RCP-hD-Jbz">
+                                <rect key="frame" x="67.5" y="285" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="A2h-5X-VPX"/>
+                                    <constraint firstAttribute="width" constant="240" id="dve-2J-aYv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdW-cw-wHz">
+                                <rect key="frame" x="334" y="20" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-cancel-50"/>
+                                <connections>
+                                    <segue destination="VXR-vu-IDz" kind="unwind" unwindAction="unwindSegue:" id="7DO-GE-PNL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84390312433242798" green="0.52060847679063627" blue="0.57100684046591965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RCP-hD-Jbz" firstAttribute="top" secondItem="2tf-eT-Pv2" secondAttribute="bottom" constant="200" id="9xi-ao-8ul"/>
+                            <constraint firstItem="2tf-eT-Pv2" firstAttribute="top" secondItem="NKw-4l-H21" secondAttribute="top" constant="20" id="hD3-u9-Dkk"/>
+                            <constraint firstItem="2tf-eT-Pv2" firstAttribute="leading" secondItem="NKw-4l-H21" secondAttribute="leading" constant="30" id="nZY-9b-SKa"/>
+                            <constraint firstItem="RCP-hD-Jbz" firstAttribute="centerX" secondItem="NKw-4l-H21" secondAttribute="centerX" id="s9l-gz-Olg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NKw-4l-H21"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsO-ng-qyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VXR-vu-IDz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="477.60000000000002" y="486.20689655172418"/>
+        </scene>
+        <!--Favorite Movie-->
+        <scene sceneID="JKP-31-yTo">
+            <objects>
+                <viewController id="ysX-XQ-STL" customClass="favoriteMovie" customModule="Hi_I_Am_Edward" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7dT-dW-zcW" customClass="yellowGradient" customModule="Hi_I_Am_Edward" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-hX-muz">
+                                <rect key="frame" x="30" y="40" width="87" height="45"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
+                                <size key="titleShadowOffset" width="-2" height="2"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" red="0.91334670782089233" green="0.61521559953689575" blue="0.3272392749786377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButtonPressed:" destination="0kq-2p-5mc" eventType="touchUpInside" id="ZL6-2S-hft"/>
+                                    <action selector="goBackButtonPressed:" destination="ysX-XQ-STL" eventType="touchUpInside" id="cT1-xL-Zb9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="220px-Kill_Bill_Volume_1" translatesAutoresizingMaskIntoConstraints="NO" id="nWg-4a-JNS">
+                                <rect key="frame" x="41.5" y="210" width="292" height="327"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="327" id="AnA-ei-lZJ"/>
+                                    <constraint firstAttribute="width" secondItem="nWg-4a-JNS" secondAttribute="height" multiplier="319:357" id="KeZ-YZ-qRi"/>
+                                    <constraint firstAttribute="width" constant="320" id="goi-rq-zf4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-PL-vD4">
+                                <rect key="frame" x="334" y="28" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-cancel-50"/>
+                                <connections>
+                                    <segue destination="WyO-GT-FAO" kind="unwind" unwindAction="unwindSegue:" id="3qH-fg-WK8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68303081737294757" green="1" blue="0.41721058695963831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nWg-4a-JNS" firstAttribute="top" secondItem="4v5-hX-muz" secondAttribute="bottom" constant="200" id="3km-ft-Lzp"/>
+                            <constraint firstItem="nWg-4a-JNS" firstAttribute="centerX" secondItem="rbg-2m-dDB" secondAttribute="centerX" id="DgF-pg-CjM"/>
+                            <constraint firstItem="nWg-4a-JNS" firstAttribute="top" secondItem="4v5-hX-muz" secondAttribute="bottom" constant="250" id="HvU-B5-ESC"/>
+                            <constraint firstItem="4v5-hX-muz" firstAttribute="top" secondItem="rbg-2m-dDB" secondAttribute="top" constant="20" id="Ps7-Ea-0qt"/>
+                            <constraint firstItem="4v5-hX-muz" firstAttribute="leading" secondItem="rbg-2m-dDB" secondAttribute="leading" constant="30" id="XoU-am-b44"/>
+                            <constraint firstItem="nWg-4a-JNS" firstAttribute="top" secondItem="4v5-hX-muz" secondAttribute="bottom" constant="125" id="tDp-29-xOo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rbg-2m-dDB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgD-np-tZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WyO-GT-FAO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="485.60000000000002" y="-179.46026986506749"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="220px-Kill_Bill_Volume_1" width="110" height="165"/>
+        <image name="El-Farsante-960x600" width="480" height="300"/>
+        <image name="icons8-cancel-50" width="25" height="25"/>
+    </resources>
 </document>
